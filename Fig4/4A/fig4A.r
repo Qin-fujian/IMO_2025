@@ -64,7 +64,7 @@ dune.div <- adonis2(dune ~ group, #离子丰度表
                     permutations = 999, #设置置换次数
                     method="bray")
 
-dune_adonis <- paste0("adonis R2: ",round(dune.div$R2,2), "; P-value: ", dune.div$`Pr(>F)`)
+dune_adonis <- paste0("adonis R2: ",round(dune.div$R2,2), "; p: ", dune.div$`Pr(>F)`)
 
 library(ggalt)
 library(ggplot2)

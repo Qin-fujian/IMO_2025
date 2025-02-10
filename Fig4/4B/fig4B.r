@@ -32,7 +32,7 @@ pheatmap(as.matrix(dat),
          color = mycol,
          annotation_col = grp,
          annotation_colors = ann_colors,
-         show_rownames=T,filename = "heatmap.pdf")
+         show_rownames=T,filename = "figB.pdf")
 
 
 

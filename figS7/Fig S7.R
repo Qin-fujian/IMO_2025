@@ -15,7 +15,7 @@ mycolors <- c("#979797","#D1F6D1","#FE8E53","#A380AA")
 
 
 #1.Fibre-free diet-----
-files <- Sys.glob("FD_*csv")
+files <- Sys.glob("CD_*csv")
 num <- length(files)
 plots <- list()
 
@@ -23,8 +23,7 @@ for (i in 1:num) {
   
   data1 <- read.csv(files[[i]],header = T,check.names = F)
   colnames(data1)[1] <- "Group"
-  data1$Group <- factor(data1$Group,
-                        levels = c("Control","DSS","P.goldsteinii"),
+  data1$Group <- factor(data1$Group,levels = c("Control","DSS","P.goldsteinii"),
                         labels = c("Control","DSS","DSS+Pg"))
   
   tt <- strsplit(files[[i]],"_")[[1]][2]
@@ -39,7 +38,7 @@ for (i in 1:num) {
   # } else {
   #   ytitle = " "
   # }
-
+  
   
   plots[[i]] <- ggplot(data1,aes(x =Group ,y=Concentration,fill = Group))+
     stat_summary(fun = mean,geom = 'col',
@@ -50,7 +49,7 @@ for (i in 1:num) {
                  color = 'black',
                  position = position_dodge(width = 0.9),
                  width = 0.3,size = 0.6) +
-
+    
     scale_fill_manual(values=mycolors)+
     
     # 添加抖动点
@@ -93,17 +92,14 @@ for (i in 1:num) {
 
 
 
-p <- plots[[8]] + plots[[4]] + plots[[1]] + plots[[3]] +
-  plots[[9]] + plots[[5]] + plots[[2]] + plots[[7]] +
-  plots[[11]] + plots[[14]] + plots[[13]] + plots[[15]] +
-  plots[[10]] + plots[[6]] + plots[[12]]  +
-  plot_layout(nrow = 4) +
-  plot_annotation(tag_levels = 'A') & 
+p <- plots[[6]] + plots[[7]] + plots[[9]] + plots[[8]] +plots[[4]] +
+  plots[[1]] + plots[[2]] + plots[[12]] + plots[[11]] + plots[[10]] +
+  plots[[3]] +  plots[[5]] +
+  plot_layout(nrow = 3) +
+  plot_annotation(tag_levels = 'a') & 
   theme(plot.tag = element_text(size = 16))
 
 
-ggsave("FFD_BAs.pdf",p,width = 10,height = 16)
-
-
+ggsave("figS7.pdf",p,width = 12,height = 12)
 
 

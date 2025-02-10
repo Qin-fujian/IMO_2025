@@ -53,7 +53,7 @@ ggplot(data2,aes(x=x,y=percentage,fill=Pathogen))+
   annotate("text", x = 2 , y = 0.25,label = "8") +
   annotate("text", x = 2 , y = 0.75,label = "10") +
   scale_fill_manual(values = cols,
-                    labels=c("Normal","Adenoma","Adenocarcinoma"))+
+                    labels=c("Adenocarcinoma","Adenoma","Normal"))+
   scale_y_continuous(expand = c(0,0),label=scales::percent_format( suffix = ""))+#将纵坐标刻度转换为百分数
   #scale_y_continuous(expand = c(0,0),breaks = seq(0, 100, 20))+#将纵坐标刻度转换为百分数
   labs(y="Pathological diagnosis (%)",title = labels)+

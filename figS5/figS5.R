@@ -191,7 +191,7 @@ p = p1 + p2 + p3
 
 
 
-pdf("OPLS-da.pdf", width = 10, height = 3)
+pdf("figS5.pdf", width = 10, height = 3)
 p
 dev.off()
 
