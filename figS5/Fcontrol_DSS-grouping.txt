@@ -1,0 +1,16 @@
+name	group
+FD_C1	Control
+FD_C2	Control
+FD_C3	Control
+FD_C4	Control
+FD_C5	Control
+FD_C7	Control
+FD_C8	Control
+FD_D1	DSS
+FD_D2	DSS
+FD_D3	DSS
+FD_D4	DSS
+FD_D5	DSS
+FD_D6	DSS
+FD_D7	DSS
+FD_D8	DSS

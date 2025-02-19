@@ -1,0 +1,15 @@
+name	group
+FD_D1	DSS
+FD_D2	DSS
+FD_D3	DSS
+FD_D4	DSS
+FD_D5	DSS
+FD_D6	DSS
+FD_D7	DSS
+FD_D8	DSS
+FD_PG2	P.goldsteinii
+FD_PG3	P.goldsteinii
+FD_PG5	P.goldsteinii
+FD_PG6	P.goldsteinii
+FD_PG7	P.goldsteinii
+FD_PG8	P.goldsteinii

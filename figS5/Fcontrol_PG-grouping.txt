@@ -1,0 +1,14 @@
+name	group
+FD_C1	Control
+FD_C2	Control
+FD_C3	Control
+FD_C4	Control
+FD_C5	Control
+FD_C7	Control
+FD_C8	Control
+FD_PG2	P.goldsteinii
+FD_PG3	P.goldsteinii
+FD_PG5	P.goldsteinii
+FD_PG6	P.goldsteinii
+FD_PG7	P.goldsteinii
+FD_PG8	P.goldsteinii
